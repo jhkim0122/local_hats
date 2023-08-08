@@ -14,15 +14,17 @@ app.use((req, res, next) => {
 });
 
 // GET 요청 처리
-app.get('/', (req, res) => {
-    res.send('Hello from Node.js server!');
+app.get('/time', (req, res) => {
+
+    console.log(`🖥 Send message: ${Date().toString()}`);
+    res.send(`🖥 Send message: ${Date().toString()}`);
 });
 
 // POST 요청 처리
 app.post('/message', (req, res) => {
     const message = req.body.message;
     console.log(`Received message: ${message}`);
-    res.send(`Received message: ${message}`);
+    res.send(`🖥 Received message: ${message}`);
 });
 
 const port = 3000;

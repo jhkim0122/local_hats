@@ -4,16 +4,26 @@ import 'package:http/http.dart' as http;
 
 class MainController extends GetxController {
   final TextEditingController messageController = TextEditingController();
-  final String url = 'http://localhost:3000/message';
+  final String url = 'http://localhost:3000';
   String response = "";
 
   void init() {
 
   }
 
-  Future<void> sendMessage() async {
+  Future<void> postMessage() async {
     try {
-      final response = await http.post(Uri.parse(url), body: {'message': messageController.text});
+      final response = await http.post(Uri.parse("$url/message"), body: {'message': messageController.text});
+      this.response = response.body;
+    } catch (e) {
+      this.response = 'Error: $e';
+    }
+    update();
+  }
+
+  Future<void> getMessage() async {
+    try {
+      final response = await http.get(Uri.parse("$url/time"));
       this.response = response.body;
     } catch (e) {
       this.response = 'Error: $e';

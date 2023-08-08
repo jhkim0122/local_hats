@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
         theme: ThemeData(
-          primarySwatch: Colors.orange,
+          primarySwatch: Colors.deepOrange,
         ),
         initialRoute: "/",
         getPages: [
