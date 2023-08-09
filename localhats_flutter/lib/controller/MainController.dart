@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
-class MainController extends GetxController {
+class HTTPController extends GetxController {
   final TextEditingController messageController = TextEditingController();
   final String url = 'http://localhost:3000';
   String response = "";

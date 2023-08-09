@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ded620-7053-4170-818d-bc15868db55d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebSideMenu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mqtt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mqtt_broker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/Menu.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/HTTPPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,13 +63,26 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.mqtt.js">
     <configuration name="app.js" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../../../../../Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="mqtt_broker.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/mqtt_broker.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="mqtt.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/mqtt.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.mqtt.js" />
+        <item itemvalue="Node.js.mqtt_broker.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,7 +94,8 @@
       <updated>1691131625443</updated>
       <workItem from="1691131626479" duration="3716000" />
       <workItem from="1691260922204" duration="320000" />
-      <workItem from="1691445577162" duration="5658000" />
+      <workItem from="1691445577162" duration="9830000" />
+      <workItem from="1691532199783" duration="21006000" />
     </task>
     <servers />
   </component>
@@ -112,6 +130,7 @@
       <configuration name="NodeJSConfigurationType">
         <watch expression="Date.now()" language="JavaScript" />
         <watch expression="Date()" language="JavaScript" />
+        <watch expression="error" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
