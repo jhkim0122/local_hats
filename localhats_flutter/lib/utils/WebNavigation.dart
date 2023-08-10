@@ -11,6 +11,7 @@ class WebNavigation extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         title: Container(
           margin: const EdgeInsets.fromLTRB(10, 30, 20, 10),

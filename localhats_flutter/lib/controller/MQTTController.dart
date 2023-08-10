@@ -4,42 +4,60 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:localhats_flutter/utils/MQTTClientManager.dart';
 import 'package:mqtt_client/mqtt_client.dart';
+import 'dart:convert' show utf8;
 
 class MQTTController extends GetxController with WidgetsBindingObserver {
   final mqttClientManager = MQTTClientManager();
-  final String pubTopic = "test/counter";
   final TextEditingController messageController = TextEditingController();
+  final TextEditingController numberController = TextEditingController();
   String response = "";
-  static const topic = 'topic/name';
+  static const topicMessage = 'topic/message';
+  static const topicNumber = "topic/number";
+  static const topicTime = "topic/time";
+  static const topicResponse = "response";
 
   MQTTController() {
-    mqttClientManager.connect().then((_) {
-      if(mqttClientManager.client.connectionStatus! == MqttConnectionState.connected){
-        mqttClientManager.subscribe(pubTopic);
-        setupUpdatesListener();
-      }
+    mqttClientManager.connect(init).then((_){
+      response += "[🔔Flutter-Web] Connected to MQTT broker";
     });
+  }
+
+  void init() {
+    mqttClientManager.subscribe(topicTime);
+    mqttClientManager.subscribe(topicResponse);
+    setupUpdatesListener();
   }
 
   Future<void> postMessage() async {
     try {
-      mqttClientManager.publishMessage(topic, messageController.text);
-      print("publish message: ${messageController.text}, topic : $topic");
-      response = "publish message: ${messageController.text}, topic : $topic";
+      mqttClientManager.publishMessage(topicMessage, messageController.text);
+      print("publish message: ${messageController.text}, topic : $topicMessage");
+      response += "\n[🔔Flutter-Web] publish message: ${messageController.text}, topic : $topicMessage";
     } catch (e) {
-      this.response = 'Error: $e';
+      this.response += '\nError: $e';
+    }
+    update();
+  }
+
+  Future<void> postNumber() async {
+    try {
+      mqttClientManager.publishMessage(topicNumber, numberController.text);
+      print("publish message: ${numberController.text}, topic : $topicNumber");
+      response += "\n[🔔Flutter-Web] publish message: ${numberController.text}, topic : $topicNumber";
+    } catch (e) {
+      this.response += '\nError: $e';
     }
     update();
   }
 
   void setupUpdatesListener() {
-    mqttClientManager
-        .getMessagesStream()!
+    mqttClientManager.client.updates!
         .listen((List<MqttReceivedMessage<MqttMessage?>>? c) {
       final recMess = c![0].payload as MqttPublishMessage;
-      final pt = MqttPublishPayload.bytesToStringAsString(recMess.payload.message);
-      response = pt;
-      print('MQTTClient::Message received on topic: <${c[0].topic}> is $pt\n');
+      final pt = utf8.decode(recMess.payload.message);
+      response += '\n$pt';
+      print('Received on topic: <${c[0].topic}> : $pt');
+      update();
     });
   }
 

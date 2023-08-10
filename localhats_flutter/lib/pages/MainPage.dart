@@ -20,16 +20,16 @@ class MainPageState extends State<MainPage>{
         body: ListView.builder(
           padding: EdgeInsets.all(10.0),
           scrollDirection: Axis.vertical,
-          itemCount: menuList.length,
+          itemCount: menuList.length-1,
           itemBuilder: (BuildContext context, int index){
             return Container(height:60,
                 margin:EdgeInsets.all(20),
                 child:ElevatedButton(
-                  onPressed: () => Navigator.of(context).pushNamed(menuList[index].routeName),
+                  onPressed: () => Navigator.of(context).pushNamed(menuList[index+1].routeName),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.deepOrange, elevation:0.0, shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(4.0))),
                   child: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: Text(menuList[index].label, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),)
+                    child: Text(menuList[index+1].label, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:20)),)
             ));
           },
         )

@@ -9,25 +9,25 @@ app.use(bodyParser.json());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
 
 // GET 요청 처리
 app.get('/time', (req, res) => {
 
-    console.log(`🖥 Send message: ${Date().toString()}`);
-    res.send(`🖥 Send message: ${Date().toString()}`);
+    console.log(`[🖥Server] Send message: ${Date().toString()}`);
+    res.send(`[🖥Server] Send message: ${Date().toString()}`);
 });
 
 // POST 요청 처리
 app.post('/message', (req, res) => {
     const message = req.body.message;
-    console.log(`Received message: ${message}`);
-    res.send(`🖥 Received message: ${message}`);
+    console.log(`[🖥Server] Received message: ${message}`);
+    res.send(`[🖥Server] Received message: ${message}`);
 });
 
-const port = 3000;
+const port = 4000;
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });

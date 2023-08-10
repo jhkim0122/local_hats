@@ -1,6 +1,7 @@
 import 'Menu.dart';
 
 List<Menu> menuList = [
-  Menu(0, "/http", "HTTP"),
-  Menu(1, "/mqtt", "MQTT"),
+  Menu(0, "/", "Home"),
+  Menu(1, "/http", "HTTP"),
+  Menu(2, "/mqtt", "MQTT"),
 ];

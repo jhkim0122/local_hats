@@ -17,7 +17,7 @@ class MQTTPage extends GetView<MQTTController> {
       builder: (_) {
         return Scaffold(
           appBar: WebNavigation(routeName),
-          body: Padding(
+          body: SingleChildScrollView(child:Padding(
             padding: EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -29,28 +29,26 @@ class MQTTPage extends GetView<MQTTController> {
                   ),
                 ),
                 SizedBox(height: 16),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children:[
-                      Expanded(
-                          child: ElevatedButton(
-                            onPressed: () {
-                              controller.postMessage();
-                            },
-                            child: Padding(padding:EdgeInsets.symmetric(vertical:8), child:Text('Send')),
-                          )
-                      ),
-                      SizedBox(width:10),
-                      Expanded(
-                        child:ElevatedButton(
-                          onPressed: () {
-                            controller.postMessage();
-                          },
-                          child: Padding(padding:EdgeInsets.symmetric(vertical:8), child:Text('Get')),
-                        ),
-                      ),
-
-                    ]
+                ElevatedButton(
+                  onPressed: () {
+                    controller.postMessage();
+                  },
+                  child: Padding(padding:EdgeInsets.symmetric(vertical:12), child:Text('Send Message')),
+                ),
+                SizedBox(height: 16),
+                TextField(
+                  keyboardType: TextInputType.number,
+                  controller: controller.numberController,
+                  decoration: InputDecoration(
+                    labelText: 'Enter Number',
+                  ),
+                ),
+                SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    controller.postNumber();
+                  },
+                  child: Padding(padding:EdgeInsets.symmetric(vertical:12), child:Text('Send Number')),
                 ),
                 SizedBox(height: 24),
                 Container(
@@ -63,16 +61,16 @@ class MQTTPage extends GetView<MQTTController> {
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:[
-                          Text('Response'),
+                          Text('Log'),
                           Padding(
                               padding:EdgeInsets.only(left:8.0, top:8.0),
                               child:SelectableText(controller.response)
-                          )
+                          ),
                         ])
                 ),
               ],
             ),
-          ),
+          )),
         );
       },
     );

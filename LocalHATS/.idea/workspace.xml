@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ded620-7053-4170-818d-bc15868db55d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mqtt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mqtt_broker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/Menu.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/HTTPPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mqtt.js" beforeDir="false" afterPath="$PROJECT_DIR$/mqtt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/hanwha/Workspace/local_hats/LocalHATS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hanwha/Workspace/nodejs_goorm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Node.js.mqtt.js">
     <configuration name="app.js" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../../../../../Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -95,7 +88,9 @@
       <workItem from="1691131626479" duration="3716000" />
       <workItem from="1691260922204" duration="320000" />
       <workItem from="1691445577162" duration="9830000" />
-      <workItem from="1691532199783" duration="21006000" />
+      <workItem from="1691532199783" duration="21788000" />
+      <workItem from="1691631838913" duration="10729000" />
+      <workItem from="1691647521519" duration="1989000" />
     </task>
     <servers />
   </component>
@@ -131,6 +126,7 @@
         <watch expression="Date.now()" language="JavaScript" />
         <watch expression="Date()" language="JavaScript" />
         <watch expression="error" language="JavaScript" />
+        <watch expression="client" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>

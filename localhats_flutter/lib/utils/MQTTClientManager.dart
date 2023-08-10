@@ -4,11 +4,12 @@ import 'package:mqtt_client/mqtt_browser_client.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 
 class MQTTClientManager {
-  MqttBrowserClient  client = MqttBrowserClient .withPort('ws://localhost/', '', 3000, maxConnectionAttempts:1);
+  var functionListen;
 
-  Future<int> connect() async {
+  MqttBrowserClient  client = MqttBrowserClient .withPort('ws://localhost/', '', 1885, maxConnectionAttempts:1);
+  Future<int> connect(functionListen) async {
     client.logging(on: true);
-    client.keepAlivePeriod = 60000000000;
+    client.keepAlivePeriod = 60;
     client.onConnected = onConnected;
     client.onDisconnected = onDisconnected;
     client.onSubscribed = onSubscribed;
@@ -16,6 +17,7 @@ class MQTTClientManager {
     client.setProtocolV311();
     client.autoReconnect = true;
     client.websocketProtocols = ['mqtt'];
+    this.functionListen = functionListen;
 
     final connMessage = MqttConnectMessage()
         .withClientIdentifier("flutter-web-client")
@@ -48,6 +50,7 @@ class MQTTClientManager {
 
   void onConnected() {
     print('MQTTClient::Connected');
+    functionListen();
   }
 
   void onDisconnected() {
