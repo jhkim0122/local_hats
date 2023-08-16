@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ded620-7053-4170-818d-bc15868db55d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mqtt.js" beforeDir="false" afterPath="$PROJECT_DIR$/mqtt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MQTTController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/controller/MainController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/data/GlobalData.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MQTTPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/pages/MainPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/MQTTClientManager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../localhats_flutter/lib/utils/WebNavigation.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +81,7 @@
       <workItem from="1691445577162" duration="9830000" />
       <workItem from="1691532199783" duration="21788000" />
       <workItem from="1691631838913" duration="10729000" />
-      <workItem from="1691647521519" duration="1989000" />
+      <workItem from="1691647521519" duration="2309000" />
     </task>
     <servers />
   </component>

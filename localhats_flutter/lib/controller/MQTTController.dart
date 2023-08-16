@@ -19,6 +19,7 @@ class MQTTController extends GetxController with WidgetsBindingObserver {
   MQTTController() {
     mqttClientManager.connect(init).then((_){
       response += "[🔔Flutter-Web] Connected to MQTT broker";
+      update();
     });
   }
 

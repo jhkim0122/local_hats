@@ -5,7 +5,7 @@ const mqttBroker = 'mqtt://localhost:1886'; // Mosquitto 브로커 주소
 const client = mqtt.connect(mqttBroker);
 
 const topicMessage = 'topic/message';
-const topicNumber = 'topic/Number';
+const topicNumber = 'topic/number';
 const topicTime = 'topic/time';
 const response = 'response';
 
@@ -36,10 +36,10 @@ client.on('connect', () => {
 
 // receive a message from the subscribed topic
 client.on('message', (topic, message) => {
-    console.log('Received on topic ${topic}: ${message.toString()}');
+    console.log(`Received on topic ${topic}: ${message.toString()}`);
     if (client.connected === true) {
-        console.log(`Publish message on topic ${topic} : ${message}`);
         client.publish(response, `[🖥Node] Received on topic ${topic}: ${message.toString()}`);
+        console.log(`Publish message on topic ${topic} : ${message}`);
     }
 });
 
